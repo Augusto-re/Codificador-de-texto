@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <section class="principal">
+            <img src="./Imagenes/Logo.png" alt="Logo de la empresa Alura" class="logo">
+            <div class="texto_botones">
+                <textarea name="" id="campo_de_texto"placeholder="Ingrese el texto aqui"></textarea>
+                <p class="advertencia"><img src="./Imagenes/Vector.png" alt="">Solo letras minúsculas y sin acentos</p>
+                <div class="botones">
+                    <button class="boton1" onclick="encriptar()">Encriptar</button>
+                    <button class="boton2" onclick="desencriptar()">Desencriptar</button>
+                </div>
+                
+            </div>
+            <div class="contenedor_texto_encriptado">
+                <div id="contenedor_oculto">
+                    <p id="parrafo_oculto"></p>
+                </div>
+                <img src="./Imagenes/Muñeco.png" alt="Imagen de muñeco con lupa mirando un diamante" id="muneco">
+                <p id="mensaje_no_encontrado">Ningún mensaje fue encontrado</p>
+                <p class="tarea">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="boton_copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Augusto Retamozo</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
